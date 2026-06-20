@@ -1,0 +1,6 @@
+{
+  "name": "Silent Rush",
+  "description": "An offline, atmospheric music player with elegant glassmorphism, sleep timer, equalizer, and soothing visuals.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
