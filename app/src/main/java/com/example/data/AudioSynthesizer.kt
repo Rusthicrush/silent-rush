@@ -114,7 +114,7 @@ object AudioSynthesizer {
         val synthType: SynthType
     )
 
-    private enum class SynthType {
+    enum class SynthType {
         CHIMES, SPACE, RAIN, SLUMBER, AURA
     }
 

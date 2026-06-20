@@ -125,7 +125,7 @@ class SilentRushViewModel(application: Application) : AndroidViewModel(applicati
 
         // Load Preset default files and database seeds
         viewModelScope.launch(Dispatchers.IO) {
-            val count = database.trackDao.getAllTracks().first().size
+            var count = database.trackDao.getAllTracks().first().size
             if (count == 0) {
                 Log.d(TAG, "Empty Database. Seeding lovely comforting ambient preset files...")
                 val seededTracks = AudioSynthesizer.synthesizePresetsIfNeeded(application)

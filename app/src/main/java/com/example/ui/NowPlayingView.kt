@@ -658,7 +658,7 @@ fun ControlDeck(
             colors = IconButtonDefaults.iconButtonColors(containerColor = GlowBlue.copy(alpha = 0.25f))
         ) {
             Icon(
-                imageVector = if (isPlaying) Icons.Filled.Pause : Icons.Filled.PlayArrow,
+                imageVector = Icons.Filled.Shuffle,
                 contentDescription = "Play/Pause",
                 tint = StarWhite,
                 modifier = Modifier.size(34.dp)
