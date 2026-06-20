@@ -24,6 +24,7 @@ import androidx.compose.ui.draw.rotate
 import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.Path
 import androidx.compose.ui.graphics.drawscope.Stroke
 import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.text.font.FontWeight
@@ -148,7 +149,7 @@ fun NowPlayingView(
                     )
                 ) {
                     Icon(
-                        imageVector = if (sleepTimerSec > 0) Icons.Default.Timer else Icons.Outline.Timer,
+                        imageVector = if (sleepTimerSec > 0) Icons.Default.Timer else Icons.Outlined.Timer,
                         contentDescription = "Sleep Timer",
                         tint = if (sleepTimerSec > 0) LunarGold else StarWhite
                     )
@@ -331,7 +332,7 @@ fun VibeTabContent(track: Track, isPlaying: Boolean) {
             targetValue = 360f,
             animationSpec = infiniteRepeatable(
                 animation = tween(15000, easing = LinearEasing),
-                repeatMode = RepeatMode.Restart
+                repeatMode = androidx.compose.animation.core.RepeatMode.Restart
             )
         )
 
@@ -409,7 +410,7 @@ fun VibeTabContent(track: Track, isPlaying: Boolean) {
                 targetValue = 2 * Math.PI.toFloat(),
                 animationSpec = infiniteRepeatable(
                     animation = tween(2000, easing = LinearEasing),
-                    repeatMode = RepeatMode.Restart
+                    repeatMode = androidx.compose.animation.core.RepeatMode.Restart
                 )
             )
 

@@ -138,7 +138,7 @@ fun SilentRushApp(viewModel: SilentRushViewModel) {
 
 @Composable
 fun SilentRushNavigationBar(
-    currentTab = HomeTab.HOME,
+    currentTab: HomeTab,
     onTabSelected: (HomeTab) -> Unit
 ) {
     // Glassmorphic navigation bar respecting system navigation safe zones

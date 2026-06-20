@@ -12,7 +12,7 @@ import kotlinx.coroutines.flow.asStateFlow
 import java.io.File
 
 class SilentRushPlayer(private val context: Context) {
-    private const val TAG = "SilentRushPlayer"
+    private val TAG = "SilentRushPlayer"
 
     private var mediaPlayer: MediaPlayer? = null
     private var equalizer: Equalizer? = null

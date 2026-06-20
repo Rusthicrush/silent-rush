@@ -22,7 +22,7 @@ import kotlinx.coroutines.launch
 import java.io.File
 
 class SilentRushViewModel(application: Application) : AndroidViewModel(application) {
-    private const val TAG = "SilentRushViewModel"
+    private val TAG = "SilentRushViewModel"
 
     private val repository: TrackRepository
     private val player: SilentRushPlayer
